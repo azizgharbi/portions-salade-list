@@ -1,6 +1,6 @@
 <template>
   <div>
-    <IngredientsForm :quantity="quantity"></IngredientsForm>
+    <Ingredients :quantity="quantity"></Ingredients>
     <div class="portions-quantity">
       <label for="quantity"> Le nombre de portions:</label>
       <select class="select" id="quantity" v-model="quantity">
@@ -16,7 +16,7 @@
 //Style
 import "./../public/css/app.scss"
 //component
-import IngredientsForm from "./IngredientsForm"
+import Ingredients from "./Ingredients"
 
 export default {
   name: "App",
@@ -26,6 +26,6 @@ export default {
       total: 4
     }
   },
-  components: { IngredientsForm }
+  components: { Ingredients }
 }
 </script>
