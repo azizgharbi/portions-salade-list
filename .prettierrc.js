@@ -7,7 +7,7 @@ module.exports = {
     semi: false,
     overrides: [
         {
-            files: ['*.js', '*.scss'],
+            files: ['*.js', '*.json', '*.scss'],
             options: {
                 printWidth: 150,
                 trailingComma: 'es5',
@@ -18,7 +18,7 @@ module.exports = {
         },
 
         {
-            files: ['*.html'],
+            files: ['*.html', '*.ejs'],
             options: {
                 printWidth: 1000,
                 tabWidth: 4,
